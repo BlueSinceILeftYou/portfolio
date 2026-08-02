@@ -1,0 +1,381 @@
+:root {
+  --background: #171717;
+  --surface: #222222;
+  --border: #414141;
+  --text: #d8d8d8;
+  --muted: #a0a0a0;
+  --heading: #fafafa;
+  --accent: #639476;
+  --accent-strong: #8fb79c;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--background);
+}
+
+.wrap {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem 3.5rem;
+  border-right: 1px solid #303030;
+  border-left: 1px solid #303030;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.name {
+  font-weight: 700;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: var(--heading);
+  font-size: 1.4rem;
+}
+
+.name:hover {
+  color: var(--accent-strong);
+}
+
+.role {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.9rem;
+}
+
+nav a {
+  position: relative;
+  margin-left: 1.1rem;
+  color: #b8b8b8;
+  font-family: var(--mono);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+nav a::after {
+  position: absolute;
+  right: 0;
+  bottom: -0.35rem;
+  left: 0;
+  height: 1px;
+  background: var(--accent-strong);
+  content: "";
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 160ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--accent-strong);
+}
+
+nav a:hover::after,
+nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+  color: var(--heading);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.7rem;
+  margin: 0 0 0.4rem;
+}
+
+h2 {
+  font-size: 1.08rem;
+  margin: 0 0 0.75rem;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--heading);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+p,
+li {
+  color: var(--text);
+  font-size: 0.94rem;
+}
+
+.intro {
+  max-width: 690px;
+  margin-bottom: 2.5rem;
+}
+
+.intro p:first-child {
+  font-size: 1.04rem;
+  line-height: 1.6;
+  margin-top: 0;
+}
+
+.socials a,
+a {
+  color: var(--accent-strong);
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.socials a:hover,
+.socials a:focus-visible {
+  color: var(--heading);
+  transform: translateY(-2px);
+}
+
+.section {
+  margin-top: 2.4rem;
+}
+
+.recent-work ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.recent-work li {
+  margin-top: 0.35rem;
+}
+
+.recent-work li::marker {
+  color: var(--accent);
+}
+
+.pathways {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.pathway {
+  min-height: 7.75rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  transition: background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.pathway span,
+.pathway small {
+  display: block;
+}
+
+.pathway span {
+  color: var(--heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.pathway small {
+  margin-top: 0.5rem;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.pathway:hover,
+.pathway:focus-visible {
+  border-color: var(--accent);
+  background: #2a2a2a;
+  color: var(--heading);
+  transform: translateY(-3px);
+}
+
+.entry,
+.project {
+  position: relative;
+  border-top: 1px solid var(--border);
+  padding: 0.9rem 0 1.05rem;
+  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.entry::before,
+.project::before {
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  left: -0.85rem;
+  width: 2px;
+  background: var(--accent);
+  content: "";
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.entry:hover,
+.entry:focus-within,
+.project:hover,
+.project:focus-within {
+  border-color: #5a5a5a;
+  background: #242424;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  transform: translateX(0.35rem);
+}
+
+.entry:hover::before,
+.entry:focus-within::before,
+.project:hover::before,
+.project:focus-within::before {
+  opacity: 1;
+}
+
+.entry-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.entry h3,
+.entry-heading h2 {
+  margin: 0;
+  color: var(--accent-strong);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.entry-heading p,
+.date {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  white-space: nowrap;
+}
+
+.entry > p,
+.project > p {
+  margin: 0.35rem 0 0;
+}
+
+.date {
+  float: right;
+}
+
+.organization,
+.detail,
+.outcome {
+  color: var(--text);
+}
+
+.organization {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+
+.page-summary {
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+}
+
+.more-link {
+  margin-top: 1.35rem;
+}
+
+a:not(.name) {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+a:not(.name):hover,
+a:not(.name):focus-visible {
+  color: #f1f5ef;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 4px;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 2rem 1.25rem 3rem;
+    border: 0;
+  }
+
+  .top {
+    flex-direction: column;
+    margin-bottom: 2.25rem;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .entry-heading {
+    display: block;
+  }
+
+  .section {
+    margin-top: 3rem;
+  }
+
+  .pathways {
+    grid-template-columns: 1fr;
+  }
+
+  .pathway {
+    min-height: auto;
+  }
+
+  .entry-heading p {
+    margin: 0.25rem 0 0;
+    white-space: normal;
+  }
+
+  .date {
+    float: none;
+    display: block;
+    margin-top: 0.2rem;
+  }
+
+  .entry:hover,
+  .entry:focus-within,
+  .project:hover,
+  .project:focus-within {
+    transform: none;
+  }
+}

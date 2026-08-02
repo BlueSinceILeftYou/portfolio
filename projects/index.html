@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Ethan Cappelleri</title>
+    <link rel="stylesheet" href="../style.css?v=20260731" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <div>
+          <a class="name" href="../index.html">Ethan Cappelleri</a>
+          <p class="role">Research · Data Science · Sports Analytics</p>
+        </div>
+        <nav>
+          <a href="../index.html">Home</a>
+          <a href="index.html">Projects</a>
+          <a href="../papers/index.html">Papers</a>
+          <a href="https://drive.google.com/file/d/14j_sIJBOKbME2xVmuZyUedzZVhjzOhyR/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+        </nav>
+      </header>
+
+      <h1>Projects</h1>
+      <p class="page-summary">Selected work in computer vision, machine learning, and sports analytics.</p>
+
+      <article class="project" id="smt-data-challenge">
+        <div class="entry-heading">
+          <h2>SMT Data Challenge</h2>
+          <p>Summer 2026</p>
+        </div>
+        <p>This summer, I participated in the SMT Data Challenge, a student analytics competition involving anonymized minor league ball- and player-tracking data. In accordance with this year's prompt, the results of my project are intended for display on a minor league scoreboard, so as to help drive fan engagement. I used Python to do my data cleaning and analysis/modeling.</p>
+        <p class="detail">Because the rules of the competition prohibit sharing or discussing my project before finalists are announced in October, the organizers have asked me to provide this prepared text in lieu of something more comprehensive. If you have questions or would like more information, please contact Meredith Wills at m.wills@smt.com.</p>
+      </article>
+
+      <article class="project" id="abs-challenges">
+        <div class="entry-heading">
+          <h2>Modeling ABS Challenges as Pitch-level State Transitions</h2>
+          <p>Feb. 2026 – Aug. 2026</p>
+        </div>
+        <p>Upcoming Saberseminar presentation, developed with a teammate from Boston University's Sports Analytics Group.</p>
+      </article>
+
+      <article class="project" id="tunnel-overlay">
+        <div class="entry-heading">
+          <h2>Tunnel Overlay</h2>
+          <p>Jan. 2026 – May. 2026</p>
+        </div>
+        <p class="organization">Python · OpenCV · scikit-learn</p>
+        <p>Improved an automated pitch-overlay system for broadcast video through preprocessing and image-registration changes. Replaced baseline cross-correlation with ORB key-point detection and RANSAC homography estimation, and built an end-to-end pipeline that retrieves Baseball Savant video, ranks pitch sequences by trajectory deception, and produces overlays automatically.</p>
+        <p class="outcome">Result: improved on baseline image-registration performance by 41% in mean squared error.</p>
+        <p class="detail"><strong>Technical report:</strong> <a href="../papers/PitchOverlay%20paper.pdf" target="_blank" rel="noreferrer">Baseball Pitch Trajectory and Overlay From Broadcast Video</a></p>
+      </article>
+
+      <article class="project" id="outlyingpitch">
+        <div class="entry-heading">
+          <h2>OutlyingPitch</h2>
+          <p>Sep. 2025 – Dec. 2025</p>
+        </div>
+        <p class="organization">Python · PyTorch · Streamlit</p>
+        <p>Built an end-to-end ML pipeline for structured event data, covering preprocessing, feature engineering, model training, and interactive analysis. Features include release point, spin metrics, count context, and handedness.</p>
+        <p class="outcome">Result: trained an MLP with 86% top-1 and 97% top-3 accuracy across a 110-pitcher classification task, then used model confusion to create a normalized pitcher similarity metric and Streamlit exploration dashboard.</p>
+        <p class="detail"><strong>Presentation (narrated by me):</strong> <a href="https://www.youtube.com/watch?v=qRGzYdCre7g" target="_blank" rel="noreferrer">Watch on YouTube</a></p>
+      </article>
+
+      <p class="more-link"><a href="../index.html">← Back to home</a></p>
+    </div>
+  </body>
+</html>

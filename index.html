@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ethan Cappelleri | Computer Science</title>
+    <meta name="description" content="Ethan Cappelleri's portfolio: machine learning, research, and sports analytics." />
+    <link rel="stylesheet" href="style.css?v=20260731" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <div>
+          <a class="name" href="index.html">Ethan Cappelleri</a>
+          <p class="role">Research · Data Science · Sports Analytics</p>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="projects/index.html">Projects</a>
+          <a href="papers/index.html">Papers</a>
+          <a href="https://drive.google.com/file/d/14j_sIJBOKbME2xVmuZyUedzZVhjzOhyR/view?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
+        </nav>
+      </header>
+
+      <section class="intro">
+        <p>
+          Hi, I’m Ethan Cappelleri, and I’m finishing the M.S. portion of Boston University’s combined
+          B.A./M.S. program in Computer Science. I did not take a straight path into CS: I started college
+          expecting to pursue academia and studied philosophy and psychology before finding my way here.
+          What stuck was the ability to learn an idea, build something with it, and test it against a real problem.
+        </p>
+        <p>
+          That interest has led me to work across machine learning, scientific AI, and reasoning systems.
+          At Argonne National Laboratory, I worked with condensed matter physicists on AI/ML tools for
+          beamline operations; at BU, I study LLM-guided proof finding and teach combinatorics and data
+          structures. Sports analytics is another place I get to apply those interests through research,
+          modeling, dashboards, and computer-vision projects. Outside of work, I enjoy ice skating, chess, watching sports with friends,
+          and spending an unreasonable amount of time managing teams in Out of the Park Baseball.
+        </p>
+        <p class="socials">
+          <a href="mailto:cappelleriethan@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/ethan-cappelleri" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/BlueSinceILeftYou" target="_blank" rel="noreferrer">GitHub</a>
+        </p>
+      </section>
+
+      <section class="section recent-work">
+        <h2>Recent Work</h2>
+        <ul>
+          <li><a href="#argonne">Genesis Mission at Argonne</a> — AI/ML tools for beamline operations at the Advanced Photon Source.</li>
+          <li><a href="#smt-data-challenge">SMT Data Challenge</a> — minor league tracking-data project; details are embargoed until October.</li>
+          <li><a href="#abs-challenges">Modeling ABS Challenges as Pitch-level State Transitions</a> — upcoming Saberseminar presentation.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Education</h2>
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>Boston University</h3>
+            <p>Boston, MA</p>
+          </div>
+          <p><strong>B.A. in Computer Science</strong><span class="date">Sep. 2022 – May 2026</span></p>
+          <p class="detail">GPA: 3.94 · Coursework: Principles of Machine Learning, Data Science Applications, Probability, Real Analysis, Analysis of Algorithms, Fine-Grained Complexity Theory, and Optimization and Operations Research.</p>
+          <p><strong>M.S. in Computer Science</strong><span class="date">Jan. 2026 – May 2027</span></p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Experience</h2>
+        <article class="entry" id="argonne">
+          <div class="entry-heading">
+            <h3>Genesis Mission Intern</h3>
+            <p>May 2026 – Aug. 2026</p>
+          </div>
+          <p class="organization">Argonne National Laboratory, Advanced Photon Source · Lemont, IL</p>
+          <p>Worked with condensed matter physicists at Argonne's Advanced Photon Source particle accelerator to improve beamline operations. Built a retrieval-augmented generation system over beamline documentation and materials data using LangChain and ChromaDB to provide sourced guidance for new beamline users. I also developed agent workflows and a feature-extraction-to-reasoning pipeline for live experiment feedback, contributing to an open-source, lab-developed agent harness. In partnership with scientists, I identified operational bottlenecks and deployed the application at two beamlines.</p>
+          <p class="detail"><strong>Poster:</strong> <a href="https://drive.google.com/file/d/101OfOWiYaTCcd6cesK_aD-0bdAFpBRI1/view?usp=sharing" target="_blank" rel="noreferrer">LLM Agents For Beamline Experiments: Sourced Guidance and Live Monitoring</a></p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>Research Assistant</h3>
+            <p>Jan. 2026 – Present</p>
+          </div>
+          <p class="organization">Boston University · Boston, MA</p>
+          <p>Developing abstractions for LLM-guided proof search and reasoning systems. Studying how heuristic quality, noise, and search strategy affect downstream performance through a Boston University UROP award.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>Teaching Assistant, Combinatoric Structures</h3>
+            <p>Sep. 2024 – Present</p>
+          </div>
+          <p class="organization">Boston University · Boston, MA</p>
+          <p>Lead weekly discussions on combinatorics, induction, and data structures; create problem sets, exams, and worksheets that address common proof-writing misconceptions. Promoted to teaching assistant in Spring 2026 after serving as a course assistant from 2024 through 2025.</p>
+        </article>
+
+        <article class="entry">
+          <div class="entry-heading">
+            <h3>Undergraduate Researcher</h3>
+            <p>Jun. 2025 – Aug. 2025</p>
+          </div>
+          <p class="organization">Polymath Jr. REU · Remote</p>
+          <p>Built Python pipelines for collecting, cleaning, and merging noisy event-level baseball tracking data; developed predictive models to estimate underlying player skill.</p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Selected Projects</h2>
+        <article class="entry" id="smt-data-challenge">
+          <div class="entry-heading">
+            <h3>SMT Data Challenge</h3>
+            <p>Summer 2026</p>
+          </div>
+          <p>This summer, I participated in the SMT Data Challenge, a student analytics competition involving anonymized minor league ball- and player-tracking data. In accordance with this year's prompt, the results of my project are intended for display on a minor league scoreboard, so as to help drive fan engagement. I used Python to do my data cleaning and analysis/modeling.</p>
+          <p class="detail">Because the rules of the competition prohibit sharing or discussing my project before finalists are announced in October, the organizers have asked me to provide this prepared text in lieu of something more comprehensive. If you have questions or would like more information, please contact Meredith Wills at m.wills@smt.com.</p>
+        </article>
+        <article class="entry" id="abs-challenges">
+          <div class="entry-heading">
+            <h3>Modeling ABS Challenges as Pitch-level State Transitions</h3>
+            <p>Feb. 2026 – Aug. 2026</p>
+          </div>
+          <p>Upcoming Saberseminar presentation, developed with a teammate from Boston University's Sports Analytics Group.</p>
+        </article>
+        <article class="entry">
+          <div class="entry-heading">
+            <h3><a href="projects/index.html#tunnel-overlay">Tunnel Overlay</a></h3>
+            <p>Python · OpenCV · scikit-learn</p>
+          </div>
+          <p>Pitch overlay and image-registration pipeline that improved on a baseline by 41% in mean squared error.</p>
+        </article>
+        <article class="entry">
+          <div class="entry-heading">
+            <h3><a href="projects/index.html#outlyingpitch">OutlyingPitch</a></h3>
+            <p>Python · PyTorch · Streamlit</p>
+          </div>
+          <p>Pitcher-classification and similarity tool with 86% top-1 and 97% top-3 accuracy across 110 pitchers.</p>
+        </article>
+        <p class="more-link"><a href="projects/index.html">View project details →</a></p>
+      </section>
+
+      <section class="section">
+        <h2>Technical Skills</h2>
+        <p>
+          Python, Java, C++, SQL, PyTorch, TensorFlow, LangChain, pandas, polars, NumPy,
+          scikit-learn, OpenCV, PyMC, Git/GitHub, AWS EC2, and Jupyter.
+        </p>
+      </section>
+
+      <footer>
+        <p>© 2026 Ethan Cappelleri · <a href="mailto:cappelleriethan@gmail.com">cappelleriethan@gmail.com</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
