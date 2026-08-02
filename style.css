@@ -120,10 +120,12 @@ li {
   margin-bottom: 2.5rem;
 }
 
-.intro p:first-child {
-  font-size: 1.04rem;
-  line-height: 1.6;
-  margin-top: 0;
+.intro p {
+  margin: 0 0 0.85rem;
+}
+
+.intro .socials {
+  margin: 1rem 0 0;
 }
 
 .socials a,
