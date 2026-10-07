@@ -24,8 +24,8 @@
 
       <section class="intro">
         <p>
-          Hi, I’m Ethan Cappelleri, and I’m finishing the M.S. portion of Boston University’s combined
-          B.A./M.S. program in Computer Science. I recently spent the summer as a Genesis Mission AI/ML
+          Hi, I’m Ethan Cappelleri. I’m finishing the M.S. portion of Boston University’s combined
+          B.A./M.S. program in Computer Science. I recently spent the summer as an AI Engineer
           intern at Argonne National Laboratory, and I am also a research assistant and teaching assistant
           at BU. Previously, I worked as an undergraduate researcher through the Polymath Jr. REU.
         </p>
@@ -49,8 +49,8 @@
         <h2>Recent Work</h2>
         <ul>
           <li><a href="#argonne">Genesis Mission at Argonne</a> — AI/ML tools for beamline operations at the Advanced Photon Source.</li>
-          <li><a href="#smt-data-challenge">SMT Data Challenge</a> — minor league tracking-data project; details are embargoed until October.</li>
-          <li><a href="#abs-challenges">Modeling ABS Challenges as Pitch-level State Transitions</a> — upcoming Saberseminar presentation.</li>
+          <li><a href="#smt-data-challenge">SMT Data Challenge</a> — our team received an honorable mention for dynamic catch probability replays.</li>
+          <li><a href="#abs-challenges">Save It for Later</a> — valuing future ABS challenge opportunities with backtracking; presented at Saberseminar 2026.</li>
         </ul>
       </section>
 
@@ -62,7 +62,7 @@
             <p>Boston, MA</p>
           </div>
           <p><strong>B.A. in Computer Science</strong><span class="date">Sep. 2022 – May 2026</span></p>
-          <p class="detail">GPA: 3.94 · Coursework: Principles of Machine Learning, Data Science Applications, Probability, Real Analysis, Analysis of Algorithms, Fine-Grained Complexity Theory, and Optimization and Operations Research.</p>
+          <p class="detail">GPA: 3.94 · Coursework: Principles of Machine Learning, Data Science Applications, Probability, Real Analysis, Fine-Grained Complexity Theory, and Optimization and Operations Research.</p>
           <p><strong>M.S. in Computer Science</strong><span class="date">Jan. 2026 – May 2027</span></p>
         </article>
       </section>
@@ -94,7 +94,7 @@
             <p>Sep. 2024 – Present</p>
           </div>
           <p class="organization">Boston University · Boston, MA</p>
-          <p>Lead weekly discussions on combinatorics, induction, and data structures; create problem sets, exams, and worksheets that address common proof-writing misconceptions. Promoted to teaching assistant in Spring 2026 after serving as a course assistant from 2024 through 2025.</p>
+          <p>Lead weekly discussions on combinatorics, induction, and data structures; created problem sets, exams, and worksheets that address common proof-writing misconceptions. Promoted to teaching assistant in Spring 2026 after serving as a course assistant from 2024 through 2025.</p>
         </article>
 
         <article class="entry">
@@ -111,18 +111,21 @@
         <h2>Selected Projects</h2>
         <article class="entry" id="smt-data-challenge">
           <div class="entry-heading">
-            <h3>SMT Data Challenge</h3>
+            <h3>“Wanna See Me Do it Again?”: Dynamic Catch Probability Visualization through ManimGL</h3>
             <p>Summer 2026</p>
           </div>
-          <p>This summer, I participated in the SMT Data Challenge, a student analytics competition involving anonymized minor league ball- and player-tracking data. In accordance with this year's prompt, the results of my project are intended for display on a minor league scoreboard, so as to help drive fan engagement. I used Python to do my data cleaning and analysis/modeling.</p>
-          <p class="detail">Because the rules of the competition prohibit sharing or discussing my project before finalists are announced in October, the organizers have asked me to provide this prepared text in lieu of something more comprehensive. If you have questions or would like more information, please contact Meredith Wills at m.wills@smt.com.</p>
+          <p class="organization">2026 SMT Data Challenge · Honorable Mention</p>
+          <p>I developed, trained, and evaluated catch probability models for our team’s animated Minor League Baseball replays, which show a fielder’s chance of making a catch over space and time. I engineered kinematic features and compared logistic regression with XGBoost, evaluating both predictive performance and whether the models captured the nonlinear behavior needed to produce meaningful probability “clouds.” I revised the modeling pipeline to support rapid experiments and prevent data leakage, and corrected a nearest-fielder identification issue that improved our Brier score and resolved inconsistencies in the animations.</p>
+          <p class="detail"><a href="projects/index.html#smt-data-challenge">Project details</a> · <a href="papers/index.html#smt-data-challenge">Read the paper</a></p>
         </article>
         <article class="entry" id="abs-challenges">
           <div class="entry-heading">
-            <h3>Modeling ABS Challenges as Pitch-level State Transitions</h3>
-            <p>Feb. 2026 – Aug. 2026</p>
+            <h3>Save It for Later: Using Backtracking to Value Future ABS Challenge Opportunities</h3>
+            <p>Aug. 2026</p>
           </div>
-          <p>Upcoming Saberseminar presentation, developed with a teammate from Boston University's Sports Analytics Group.</p>
+          <p class="organization">Saberseminar 2026 · with Sam Cowan</p>
+          <p>We developed a backtracking framework to estimate the opportunity cost of using an automated ball-strike (ABS) challenge. I designed models of league-wide challenge probability and proposed the backtracking algorithm. We then evaluated players’ challenge decisions against league average and estimated their impact in runs.</p>
+          <p class="detail"><a href="projects/index.html#abs-challenges">Project details</a> · <a href="papers/index.html#abs-challenges">Presentation summary</a></p>
         </article>
         <article class="entry">
           <div class="entry-heading">

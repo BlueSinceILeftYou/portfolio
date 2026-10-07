@@ -26,19 +26,26 @@
 
       <article class="project" id="smt-data-challenge">
         <div class="entry-heading">
-          <h2>SMT Data Challenge</h2>
+          <h2>“Wanna See Me Do it Again?”: Dynamic Catch Probability Visualization through ManimGL</h2>
           <p>Summer 2026</p>
         </div>
-        <p>This summer, I participated in the SMT Data Challenge, a student analytics competition involving anonymized minor league ball- and player-tracking data. In accordance with this year's prompt, the results of my project are intended for display on a minor league scoreboard, so as to help drive fan engagement. I used Python to do my data cleaning and analysis/modeling.</p>
-        <p class="detail">Because the rules of the competition prohibit sharing or discussing my project before finalists are announced in October, the organizers have asked me to provide this prepared text in lieu of something more comprehensive. If you have questions or would like more information, please contact Meredith Wills at m.wills@smt.com.</p>
+        <p class="organization">2026 SMT Data Challenge · with Sam Cowan, Evan Kurtz, and Tejas Rama</p>
+        <p>Our team developed scoreboard-ready replays of Minor League Baseball outfield plays using anonymized ball- and player-tracking data. An XGBoost model estimated catch probability at 20 frames per second, while a custom extension to ManimGL animated 3D player and ball movement alongside probability “clouds.” The replays show fans how a fielder’s chance of making a catch changes over both space and time.</p>
+        <p>I developed, trained, and evaluated the catch probability models used to generate the probability clouds. I engineered kinematic features and compared logistic regression with XGBoost, considering both predictive performance and how each model represented the nonlinear behavior needed for the animation. This meant evaluating the models for their intended use as a visualization, beyond standard prediction metrics. I revised the modeling pipeline to support rapid experiments and prevent data leakage, and traced unexpected behavior in the probability clouds to a data-integrity issue in the nearest-fielder identification logic. Correcting it improved our Brier score and resolved the animation inconsistencies. I also helped troubleshoot animation issues and write the paper.</p>
+        <p class="outcome">Result: our team received an honorable mention in the 2026 SMT Data Challenge.</p>
+        <p class="detail"><a href="../papers/index.html#smt-data-challenge">Read the paper and abstract</a></p>
       </article>
 
       <article class="project" id="abs-challenges">
         <div class="entry-heading">
-          <h2>Modeling ABS Challenges as Pitch-level State Transitions</h2>
+          <h2>Save It for Later: Using Backtracking to Value Future ABS Challenge Opportunities</h2>
           <p>Feb. 2026 – Aug. 2026</p>
         </div>
-        <p>Upcoming Saberseminar presentation, developed with a teammate from Boston University's Sports Analytics Group.</p>
+        <p class="organization">Saberseminar 2026 · with Sam Cowan · Boston University Sports Analytics Group</p>
+        <p>Using an automated ball-strike (ABS) challenge means weighing the current opportunity against the value of having a challenge available later. We developed a backtracking framework to estimate the expected value of future challenge opportunities and use it to quantify the opportunity cost of challenging a pitch.</p>
+        <p>I designed models to predict league-wide challenge probability and proposed the backtracking algorithm. Together, we developed a metric comparing players’ challenge decisions with league average and estimated the runs those decisions added or cost their teams.</p>
+        <p class="outcome">Presented with Sam Cowan at Saberseminar in August 2026.</p>
+        <p class="detail"><a href="../papers/index.html#abs-challenges">Presentation summary</a></p>
       </article>
 
       <article class="project" id="tunnel-overlay">
